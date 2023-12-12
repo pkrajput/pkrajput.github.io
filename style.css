@@ -36,14 +36,15 @@ p, a {
     margin-bottom: 20px;
 }
 
-.social-links a {
-    color: #007bff;
+.social-links a, a {
+    color: #ff4500; /* Distinct color for links */
     text-decoration: none;
     font-weight: bold;
 }
 
-.social-links a:hover {
-    color: #0056b3;
+.social-links a:hover, a:hover {
+    color: #cc3700;
+    text-decoration: underline;
 }
 
 section {
@@ -55,8 +56,19 @@ section p {
     text-align: justify;
 }
 
-a:hover {
-    text-decoration: underline;
+/* Specific styles for Experience and Projects */
+section p.date-header {
+    font-size: 1.2em;
+    margin-bottom: 5px; /* Less spacing for header */
+}
+
+section p.description {
+    margin-top: 0px; /* More spacing for description */
+}
+
+/* Publications text color */
+section h2.publications {
+    color: #008080;
 }
 
 @media screen and (max-width: 768px) {
