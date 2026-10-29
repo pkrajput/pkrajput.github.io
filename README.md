@@ -1,22 +1,22 @@
 # Prateek Kumar Rajput
 
-Personal research website, published at https://pkrajput.github.io/ through GitHub Pages.
+Static personal research website for GitHub Pages.
 
-## Update content
+## Edit and preview
 
-- Edit `index.template.html` for the biography, funding, experience, and education.
-- Edit `data/publications.json` for papers and their publication status.
+- Edit `index.template.html` for the compact biography, logo row, supervisors, and research grants.
+- Edit `data/publications.json` for publication details. Entries with `selected: true` appear by default and the rest are in the native “More publications” disclosure.
 - Run `python3 build.py` to regenerate `index.html`.
-- Replace `assets/Prateek_Rajput_CV.pdf` when updating the CV.
-- Preview with `python3 -m http.server 8873`.
+- Run `python3 -m http.server 8873 --bind 127.0.0.1` to preview locally.
 
-The page is static HTML/CSS with a small progressive-enhancement script for
-publication filters. All papers remain visible if JavaScript is disabled.
-Styling includes mobile layouts, keyboard focus states, reduced-motion
-support, and print rules. Google Fonts has system-font fallbacks.
+The site uses HTML and CSS only, with system fonts and no external font requests or JavaScript dependencies. Publication links remain available through the native disclosure without JavaScript. Layouts support mobile screens, keyboard focus, and reduced motion.
 
-Manuscripts are distinguished from accepted/published work. The paper
-“Program Bindings Inside Code Models” has no public paper URL yet; add its
-arXiv URL after announcement. Do not add its review venue to public content.
+The website intentionally has no CV download or hosted CV PDF. Keep CV files outside this repository. Program Bindings Inside Code Models links to the prepared author PDF in `assets/` until a public arXiv URL is available. Do not add its review venue to public content.
 
-Deploy by pushing a reviewed change to `main`; GitHub Pages serves the repository root.
+GitHub Pages serves the repository root. Run the static build and review changes before pushing to `main`.
+
+## Logo sources
+
+- University of Luxembourg logo: https://commons.wikimedia.org/wiki/File:University_of_Luxembourg_logo_(fr).svg (university-authored vector extracted from its official material).
+- Huawei logo: https://www.huawei.com/-/media/hcomponent-header/1.0.1.20260908162100/component/img/huawei_logo.png
+- OxML uses the text wordmark displayed on https://www.oxfordml.school/ (OxML by AI4GG), rendered as HTML rather than a substituted university crest.
